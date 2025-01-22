@@ -1,7 +1,14 @@
 # Getting Started with Create React App
-
+Video Link for working view - https://drive.google.com/file/d/1ppZ3kidSwXoo8HZim5RmpHIz5IOG80xO/view?usp=sharing
+Deployed link - https://google-calendar-app-psi.vercel.app
+Github repo link - https://github.com/harsh-2025/google-calendar-app
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
+## For running the app 
+Clone the github repo 
+`npm install`
+`npm run start`
+go to localhost 3000
+Login via your google account
 ## Available Scripts
 
 In the project directory, you can run:
