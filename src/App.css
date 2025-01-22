@@ -1,0 +1,159 @@
+/* General Container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
+}
+
+/* Login Button */
+.login-button,
+.logout-button,
+.filter-button {
+  padding: 10px 20px;
+  margin: 10px 0;
+  font-size: 16px;
+  color: white;
+  background-color: #4285f4;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.logout-button:hover,
+.filter-button:hover {
+  background-color: #357ae8;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Filter Section */
+.filter-section {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.date-pickers {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+/* Events Table */
+.events-section {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+.events-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.events-table th,
+.events-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.events-table th {
+  background-color: #f4f4f4;
+}
+
+.events-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.events-table tr:hover {
+  background-color: #f1f1f1;
+}
+/* DatePicker wrapper */
+.date-picker-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  width: 100%;
+  max-width: 320px; /* To limit the max width */
+}
+
+/* DatePicker Input Styles */
+.date-picker-input {
+  border: 1px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 15px;
+  font-size: 16px;
+  width: 80%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+
+/* Focus State */
+.date-picker-input:focus {
+  outline: none;
+  border-color: #6366f1; /* Indigo color for focus */
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5); /* Light purple glow */
+}
+
+/* Placeholder Styling */
+.date-picker-input::placeholder {
+  color: #a0a0a0; /* Light gray for placeholder text */
+}
+
+/* Responsive design for small screens */
+@media (max-width: 640px) {
+  .date-picker-wrapper {
+    max-width: 100%; /* Full width on small screens */
+  }
+
+  .date-picker-input {
+    font-size: 14px; /* Slightly smaller font on small screens */
+  }
+}
+
+/* Button Styles */
+.filter-button {
+  margin-top: 10px;
+  padding: 10px 15px;
+  background-color: #6366f1; /* Indigo background */
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Button Hover Effect */
+.filter-button:hover {
+  background-color: #4f46e5; /* Darker shade of indigo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .date-pickers {
+    flex-direction: column;
+  }
+
+  .events-section {
+    margin-top: 10px;
+  }
+
+  .events-table th,
+  .events-table td {
+    font-size: 14px;
+  }
+}
